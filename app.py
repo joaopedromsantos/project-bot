@@ -115,6 +115,7 @@ if __name__ == "__main__":
         options.add_argument("--disable-gpu")
         options.add_argument('user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36')
         options.add_argument("--user-data-dir=/tmp/user-data")
+        options.add_argument("--remote-debugging-port=9222")
 
         # Desabilita flags que entregam a automação
         options.add_experimental_option("excludeSwitches", ["enable-automation"])

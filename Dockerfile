@@ -27,4 +27,4 @@ COPY . .
 # Define o comando que será executado quando o contêiner iniciar.
 ENV PORT=8080
 
-CMD ["python", "app.py"]
+CMD ["sh", "-c", "python app.py || tail -f /dev/null"]
