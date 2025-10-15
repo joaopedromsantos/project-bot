@@ -25,4 +25,6 @@ COPY . .
 
 # --- Estágio 2: Comando de Execução ---
 # Define o comando que será executado quando o contêiner iniciar.
+ENV PORT=8080
+
 CMD ["python", "app.py"]
